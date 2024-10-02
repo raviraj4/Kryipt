@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encryption Service</title>
+    <script src="./script.js"></script>
+    <style>
+         body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+  </head>
+  <body>
+    <h2>Caesar Cipher</h2>
+    <form id="caesarForm" onsubmit="event.preventDefault(); caesarEncrypt()">
+      <input
+        type="text"
+        id="caesarText"
+        placeholder="text to encrypt"
+        required
+      />
+      <input
+        type="text"
+        id="caesarShift"
+        placeholder="shift"
+        required
+      />
+      <button type="submit">Encrypt</button>
+    </form>
+    <div class="result" id="caesarResult"></div>
+
+    <h2>DES Encryption</h2>
+    <form onsubmit="event.preventDefault(); desEncrypt();">
+      <input type="text" id="desData" placeholder="text to encrypt" required />
+      <button type="submit">Encrypt</button>
+    </form>
+    <div class="result" id="desResult"></div>
+
+    <h2>DES Decryption</h2>
+    <form id="desDecryption" onsubmit="event.preventDefault(); desDecrypt();">
+      <input
+        type="text"
+        name=""
+        id="desEncryptedData"
+        placeholder="Encrypted Data"
+        required
+      />
+      <input
+        type="text"
+        name=""
+        id="desKey"
+        placeholder="Key (Base64)"
+        required
+      />
+      <button type="submit">Decrypt</button>
+
+      <div class="result" id="desDecryptResult"></div>
+    </form>
+  </body>
+</html>

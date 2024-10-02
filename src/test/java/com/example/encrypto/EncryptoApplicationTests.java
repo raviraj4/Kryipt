@@ -1,0 +1,13 @@
+package com.example.encrypto;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class EncryptoApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
